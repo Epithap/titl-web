@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <img src="img/logosmk.png" alt="" srcset="" width="40px"> <span></span>
+      <h2>SMKN 2 YK</h2>
+      <h3>WEBSITE JURUSAN TITL</h3>
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="profil.html">Profil jurusan</a></li>
+        <li><a href="prestasi.html">Prestasi</a></li>
+        <li><a href="album.html" class="active">Album</a></li>
+        <li><a href="buku.html">Buku tamu</a></li>
+    </ul>
+    </div>
+
+</div>
+<div class="container">
+    <div class="isiindexalbum" data-aos="fade-up">
+        <div class="gallery">
+            <div class="gallery-grid">
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/akti.jpeg" alt=""><div class="overlay">murid praktek</div>
+                </div>
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/akti2.jpeg" alt=""><div class="overlay">murid sedang praktik</div>
+                </div>
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/kelas1.jpeg" alt=""><div class="overlay">kelas titl</div>
+                </div>
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/kelas2.jpeg" alt=""><div class="overlay">pengajaran titl</div>
+                </div>
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/labkom.png" alt=""><div class="overlay">lab kom di titl</div>
+                </div>
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/lab2.jpeg" alt=""><div class="overlay">lab kom di titl</div>
+                </div>
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/lantai2.jpeg" alt=""><div class="overlay">lantai atas gedung titl</div>
+                </div>
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/luarkelas 2.jpeg" alt=""><div class="overlay">gedung titl</div>
+                </div>
+                <div class="image-card" onclick="openModal(this)">
+                  <img src="img/luarkelas.jpeg" alt=""><div class="overlay">gedung titl</div>
+                </div>
+              </div>
+              
+
+          
+          <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+          </div>
+          
+    </div>
+</div>
+    <footer class="footer">
+        <p>
+            copyright ©Upik menuju indonesia emas 2045
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
