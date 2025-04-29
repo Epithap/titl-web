@@ -1,23 +1,31 @@
-AOS.init({
-  duration: 1300
-});
 
-const navLinks = document.querySelectorAll('.header a');
-
-navLinks.forEach(link => {
-link.addEventListener('click', function () {
-  navLinks.forEach(l => l.classList.remove('active'));
-  this.classList.add('active');
-});
-});
+AOS.init();
 
 function openModal(element) {
-const modal = document.getElementById("modal");
-const modalImg = document.getElementById("modalImg");
-modal.style.display = "block";
-modalImg.src = element.querySelector("img").src;
+  var modal = document.getElementById("modal");
+  var modalImg = document.getElementById("modalImg");
+  modal.style.display = "block";
+  modalImg.src = element.querySelector('img').src;
 }
 
 function closeModal() {
-document.getElementById("modal").style.display = "none";
+  var modal = document.getElementById("modal");
+  modal.style.display = "none";
 }
+
+const headers = document.querySelectorAll(".accordion-header");
+
+headers.forEach(header => {
+  header.addEventListener("click", () => {
+    header.classList.toggle("active");
+    const content = header.nextElementSibling;
+    
+    if (header.classList.contains("active")) {
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.padding = "10px";
+    } else {
+      content.style.maxHeight = "0";
+      content.style.padding = "0 10px";
+    }
+  });
+});
